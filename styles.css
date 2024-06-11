@@ -1,0 +1,347 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+.navbar-brand .highlight-my {
+    color: #fff; /* Purple color for "My" */
+}
+
+.navbar-brand .highlight-portfolio {
+    color: #fff; /* Blue color for "Portfolio" */
+}
+
+        /* Custom CSS for header animation */
+        .header {
+            background-image: url('img/bc8.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+/* Transparent Navbar Styles */
+        .navbar {
+            background-color: transparent;
+            padding: 1rem;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .navbar.scrolled {
+            background-color: #fff; /* Change background color when scrolled */
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #00ff1d; /* Bootstrap success color */
+        }
+        .navbar-nav .bbbtttnnn:hover {
+            color: #fff; /* Bootstrap success color */
+        }
+        .offcanvas-body .nav-link:hover {
+            color: #00ff1d; /* Bootstrap success color */
+        }
+        .offcanvas-body .btn-success:hover {
+            color: #fff; /* Bootstrap success color */
+        }
+
+        /* Padding for Sections */
+        section {
+            padding: 100px 0;
+        }
+
+
+.header::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+        .header-content {
+            color: white;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .header-content h1 {
+            font-size: 3rem;
+        }
+
+        .header-content p {
+            font-size: 1.5rem;
+        }
+
+        /* Hover effect */
+        .header:hover .header-content {
+            transform: translateY(20px); /* Move content up on hover */
+        }
+
+        /* Example: Animation on load */
+        @keyframes fadeInUp {
+            from {
+                opacity: 10;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 10;
+                transform: translateY(0);
+            }
+        }
+
+        .header .header-content {
+            animation: fadeInUp 1s ease-out;
+        }
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+/* Custom CSS for styling */
+         .about-section {
+            padding: 100px 0 50px; /* Adjust padding as needed */
+            text-align: center;
+            background-color: #f8f9fa; /* Background color for the section */
+        }
+
+
+        .about-section img {
+            max-width: 100%; /* Ensure image doesn't exceed its container */
+            border-radius: 50%; /* Optional: Apply rounded corners to the image */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+        }
+
+        /* Custom CSS for styling */
+.progress-section {
+            padding: 50px 0 100px; /* Adjust padding as needed */
+            text-align: center;
+            background-color: #e9ecef; /* Background color for the section */
+        }
+.progress-section h2 {
+        font-size: 2.5rem;
+}
+
+        .progress {
+            height: 20px; /* Height of the progress bar */
+            margin-bottom: 20px; /* Bottom margin for spacing */
+            overflow: hidden; /* Hide overflowing content */
+            background-color: #f5f5f5; /* Background color for the progress bar */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        .progress-bar {
+            transition: width 0.6s ease; /* Smooth animation */
+        }
+
+
+/* -------- ABOUT AND PROGRESS SECTION END HERE -------- */
+#projects {
+        background-color: #cdcdcd;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    animation: slideInFromRight 1s ease-in-out;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: slideInFromBottom 1s ease-in-out;
+}
+
+.footer {
+    background-color: #343a40;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.book-now-btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.book-now-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Custom CSS for additional hover effects and animations */
+
+        /* Scale animation */
+        .animate-scale {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .animate-scale:hover {
+            transform: scale(1.1);
+        }
+
+        /* Fade animation */
+        .animate-fade {
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .animate-fade:hover {
+            opacity: 0.7;
+        }
+
+        /* Example: Custom hover effect for buttons */
+        .btn-custom {
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            border-radius: 20px;
+        }
+
+        .btn-custom:hover {
+            transform: translateY(-5px);
+            background-color: #6c757d;
+        }
+
+        /* Example: Custom hover effect for cards */
+        .card-custom {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-custom img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card-custom:hover img {
+            transform: scale(1.1);
+        }
+
+        .card-custom .card-body {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            transition: opacity 0.3s ease-in-out;
+            opacity: 0;
+        }
+
+        .card-custom:hover .card-body {
+            opacity: 1;
+        }
+
+     /* Custom CSS for styling and animations */
+        .about-section,
+        .progress-section,
+        .projects-section {
+            opacity: 0;
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+            transform: translateY(50px); /* Initially translate the section downwards */
+        }
+
+        .about-section.visible,
+        .progress-section.visible,
+        #projects.visible {
+            opacity: 1;
+            transform: translateY(0); /* Move the section to its original position */
+        }
+
+        .progress-bar {
+            width: 0;
+            transition: width 1s ease;
+        }
+
+        .progress-section.visible .progress-bar {
+            transition: width 1s ease;
+        }
+
+        .highlight-my {
+            color: #ff5733; /* Color for 'My' */
+        }
+
+        .highlight-portfolio {
+            color: #33c3ff; /* Color for 'Portfolio' */
+        }
+
+        .book-now-btn {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .book-now-btn:hover {
+            background-color: #28a745;
+            transform: scale(1.1);
+        }
+
+        #projects {
+            background-image: url('img/bc5.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 60px 0;
+        }
+
+        #projects:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: -1; /* Behind other content */
+        }
+
+        #projects .container {
+            position: relative; /* Maintain stacking context */
+            z-index: 1; /* Above background overlay */
+        }
+
+        #projects h2 {
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+            border: none;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        .card-text {
+            color: #ccc;
+        }
